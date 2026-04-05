@@ -43,7 +43,7 @@ The app allows users to browse songs from their device, play music with full con
   <img src="screenshots/favorites.png" width="250"/>
 </p>
 
-> 📌 Place your screenshots inside a folder named `screenshots/`
+
 
 ---
 
