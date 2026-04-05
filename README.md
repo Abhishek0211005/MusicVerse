@@ -1,37 +1,42 @@
 # 🎵 MusicVerse
 
 <p align="center">
+  <img src="https://img.shields.io/github/stars/your-username/MusicVerse?style=for-the-badge&color=yellow"/>
+  <img src="https://img.shields.io/github/forks/your-username/MusicVerse?style=for-the-badge&color=blue"/>
+  <img src="https://img.shields.io/github/issues/your-username/MusicVerse?style=for-the-badge&color=red"/>
   <img src="https://img.shields.io/badge/Kotlin-Android-blueviolet?style=for-the-badge&logo=kotlin"/>
-  <img src="https://img.shields.io/badge/Platform-Android-green?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge"/>
 </p>
 
 <p align="center">
-  A modern and elegant 🎧 music player app built using <b>Kotlin</b>
+  <h2 align="center">🎧 MusicVerse</h2>
+  <p align="center">A modern Android music player built using Kotlin</p>
 </p>
 
 ---
 
-## ✨ Overview
+## 📖 Description
 
-MusicVerse is a feature-rich Android music player designed to provide a smooth and immersive listening experience.  
-Users can browse, play, and manage their favorite songs with a clean and intuitive interface.
+MusicVerse is a modern and feature-rich Android music player application developed using Kotlin.  
+It provides a smooth, fast, and immersive music listening experience with a clean and intuitive user interface.
+
+The app allows users to browse songs from their device, play music with full controls, and manage their favorite tracks efficiently.
 
 ---
 
-## 🚀 Features
+## ✨ Features
 
-- 🎧 Play local audio files  
-- ⏯️ Play / Pause / Next / Previous  
-- 🔁 Shuffle & Repeat modes  
-- ❤️ Favorite songs support  
-- 📂 Auto-detect songs from storage  
+- 🎧 Play local music files  
+- ⏯️ Play / Pause / Next / Previous controls  
+- 🔁 Shuffle and Repeat modes  
+- ❤️ Add songs to Favorites  
+- 📂 Automatic song detection from storage  
 - 🎨 Clean and modern UI  
 - ⚡ Fast and lightweight performance  
 
 ---
 
-## 📱 Screenshots
+## 🖼️ Screenshots
 
 <p align="center">
   <img src="screenshots/home.png" width="250"/>
@@ -39,19 +44,54 @@ Users can browse, play, and manage their favorite songs with a clean and intuiti
   <img src="screenshots/favorites.png" width="250"/>
 </p>
 
-> 📌 Add your screenshots inside a folder named `screenshots`
+> 📌 Place your images inside a folder named `screenshots`
+
+---
+
+## 🎥 Demo
+
+<p align="center">
+  <img src="screenshots/demo.gif" width="300"/>
+</p>
+
+> 📌 Add a demo GIF to make your project look more professional
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Technology | Usage |
-|----------|------|
-| Kotlin | App Development |
-| Android Studio | IDE |
+| Technology | Description |
+|------------|------------|
+| Kotlin | Programming Language |
+| Android Studio | Development Environment |
 | XML | UI Design |
 | MediaPlayer / ExoPlayer | Audio Playback |
 
 ---
 
 ## 📂 Project Structure
+##
+MusicVerse/
+│── app/
+│ ├── src/
+│ │ ├── main/
+│ │ │ ├── java/
+│ │ │ ├── res/
+│ │ │ └── AndroidManifest.xml
+│ │
+│ └── build.gradle
+│
+│── gradle/
+│── build.gradle
+│── settings.gradle
+##
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/MusicVerse.git
+
