@@ -1,164 +1,75 @@
-# 🎵 MusicVerse
+# MusicFlow - Modern Music Streaming Web App
 
-<p align="center">
-  <img src="https://img.shields.io/github/stars/your-username/MusicVerse?style=for-the-badge&color=yellow"/>
-  <img src="https://img.shields.io/github/forks/your-username/MusicVerse?style=for-the-badge&color=blue"/>
-  <img src="https://img.shields.io/github/issues/your-username/MusicVerse?style=for-the-badge&color=red"/>
-  <img src="https://img.shields.io/badge/Kotlin-Android-blueviolet?style=for-the-badge&logo=kotlin"/>
-  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge"/>
-</p>
+Ek modern aur responsive music streaming website jo Android apps mein embed karne ke liye perfect hai.
 
-<h3 align="center">🎧 A Modern Android Music Player built with Kotlin</h3>
+## Features
 
----
+- 🎵 Clean aur modern UI design
+- 📱 Fully responsive (mobile-first)
+- 🎨 Unique design (Spotify jaisa nahi)
+- 🔍 Search functionality
+- ⏯️ Play, pause, next, previous controls
+- 📊 Progress bar with seek functionality
+- 🎧 GitHub se music streaming
 
-## 📖 Description
+## Setup Instructions
 
-**MusicVerse** is a modern and feature-rich Android music player application developed using **Kotlin**.
-It provides a smooth, fast, and immersive music listening experience with a clean and intuitive user interface.
+### 1. Music Files GitHub pe upload karein
 
-The app allows users to browse songs from their device, play music with full controls, and manage their favorite tracks efficiently.
+Apne GitHub repository mein ek `music` folder banayein aur apni MP3 files upload karein.
 
----
+### 2. URLs update karein
 
-## ✨ Features
+`script.js` file mein `musicData` array mein apne actual GitHub URLs dalein:
 
-- 🎧 Play local music files
-- ⏯️ Play / Pause / Next / Previous controls
-- 🔁 Shuffle and Repeat modes
-- ❤️ Add songs to Favorites
-- 📂 Automatic song detection from storage
-- 🎨 Clean and modern UI
-- ⚡ Fast and lightweight performance
-
----
-
-## 🖼️ Screenshots
-
-<p align="center">
-  <img src="screenshots/home.png" width="250"/>
-  &nbsp;&nbsp;
-  <img src="screenshots/player.png" width="250"/>
-  &nbsp;&nbsp;
-  <img src="screenshots/favorites.png" width="250"/>
-</p>
-
-
-
----
-
-## 🎥 Demo
-
-<p align="center">
-  <img src="screenshots/demo.gif" width="300"/>
-</p>
-
-> 📌 Add a demo GIF to make your project look more professional
-
----
-
-## 🛠️ Tech Stack
-
-| Technology | Description |
-|---|---|
-| Kotlin | Primary Programming Language |
-| Android Studio | Development Environment |
-| XML | UI Layout Design |
-| MediaPlayer / ExoPlayer | Audio Playback Engine |
-
----
-
-## 📂 Project Structure
-
-```
-MusicVerse/
-├── app/
-│   ├── src/
-│   │   ├── main/
-│   │   │   ├── java/          # Kotlin source files
-│   │   │   ├── res/           # Layouts, drawables, strings
-│   │   │   └── AndroidManifest.xml
-│   └── build.gradle
-├── gradle/
-├── build.gradle
-└── settings.gradle
+```javascript
+url: "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/music/song1.mp3"
 ```
 
----
+### 3. Songs add karein
 
-## ⚙️ Installation & Setup
+`musicData` array mein aur songs add kar sakte hain:
 
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/your-username/MusicVerse.git
+```javascript
+{
+    id: 6,
+    title: "Your Song Name",
+    artist: "Artist Name",
+    duration: "3:45",
+    url: "your-github-raw-url"
+}
 ```
 
-### 2. Open in Android Studio
+## Android App mein Embed karna
 
-- Launch **Android Studio**
-- Click on **Open Project**
-- Select the cloned project folder
+WebView mein is website ko load karein:
 
-### 3. Run the application
+```java
+WebView webView = findViewById(R.id.webview);
+webView.getSettings().setJavaScriptEnabled(true);
+webView.getSettings().setMediaPlaybackRequiresUserGesture(false);
+webView.loadUrl("file:///android_asset/index.html");
+```
 
-- Connect your Android device or start an emulator
-- Click the ▶ **Run** button
+## Files
 
----
+- `index.html` - Main HTML structure
+- `style.css` - Styling aur animations
+- `script.js` - Music player functionality
+- `README.md` - Documentation
 
-## 📋 Requirements
+## Color Scheme
 
-- Android Studio (latest version recommended)
-- Android SDK **21 or higher**
-- Android device or emulator
+- Primary: Indigo (#6366f1)
+- Accent: Pink (#ec4899)
+- Background: Dark gradient
+- Modern aur eye-friendly colors
 
----
+## Browser Support
 
-## 🚀 Future Enhancements
+- Chrome/Edge (recommended)
+- Firefox
+- Safari
+- Android WebView
 
-- 🎶 Online music streaming
-- 🎼 Playlist management
-- 🌙 Dark mode support
-- 🔊 Built-in equalizer
-- ☁️ Cloud synchronization
-
----
-
-## 🤝 Contributing
-
-Contributions are always welcome! Here's how you can help:
-
-1. **Fork** the repository
-2. **Create** a new branch (`git checkout -b feature/your-feature-name`)
-3. **Commit** your changes (`git commit -m 'Add some feature'`)
-4. **Push** to the branch (`git push origin feature/your-feature-name`)
-5. **Open** a Pull Request
-
----
-
-## 📜 License
-
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
-
----
-
-## 👨‍💻 Author
-
-**Satyam Singh**
-
-- GitHub: [@your-username](https://github.com/your-username)
-
----
-
-## ⭐ Support
-
-If you like this project, please consider:
-
-- ⭐ **Starring** the repository
-- 🍴 **Forking** it
-- 📢 **Sharing** it with others
-
----
-
-<p align="center">Made with ❤️ using Kotlin 🚀</p>
+Enjoy your music! 🎵
